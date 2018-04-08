@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>formulaire </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/pic01.png"  />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+	</head>
+	<body>
+
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html"></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+					</nav>
+				</header>
+
+			<!-- Main -->
+			 <h2> Esitmez votre bien ... </h2>
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<form id="monForm" method="post" >
+              <p>
+           	 	  <input type="radio" name="loca" id="loc" value="loc">
+            		<label for="loc">Localisation</label>
+								<input type="radio" name="loca" id="ven" value="ven">
+            		<label for="ven">Vente</label>
+             </p>
+
+								<label for="adresse"> Adresse </label>
+								<input type="text" name="adresse" id="adresse"required placeholder="Numéro de batiment, Rue" size="40">
+								<span id="missAdresse"></span><br>
+
+								<label for="code_postal"> Code postal </label>
+								<input type="number" name="code_postal" id="code_postal" min="0" placeholder="EX: 91000" required ><br>
+
+								<label for="ville"> Ville </label>
+								<input type="text" name="ville" id="ville"  required ><br>
+
+								<label for="type_bien"> Type de bien </label>
+								<select name="type_bien" id="type_bien">
+						               		 <option value="Appart" selected>Appartement</option>
+						                	 <option value="Maison">Maison</option>
+						                	 <option value="XX">Autre</option>
+						            	</select><br>
+
+								<label for="surface"> Surface </label>
+								<input type="number" name="surface" id="surface" min="0" required placeholder="EX:50m²"><br>
+
+								<label for="nb_pieces"> Nombres de pièces </label>
+								<select name="nb_pieces" id="nb_pieces" >
+						               		 <option value="1" >1 pièce</option>
+						                	 <option value="2" selected>2 pièces</option>
+						                	 <option value="3">3 pièces</option>
+									 <option value="4">4 pièces</option>
+									 <option value="XX">Autre</option>
+						            	</select>
+								<br>
+
+								<label for="nb_sdb"> Nombre de sdb </label>
+								<select name="nb_sdb" id="nb_sdb">
+						               		 <option value="1" selected>1 sdb</option>
+						                	 <option value="2">2 sdb</option>
+						                	 <option value="3">3 sdb</option>
+									 <option value="XX">Autre</option>
+						            	</select><br>
+
+								<input type="submit" class="button special" value="Estimer" id="bouton_estimer"/>
+								<input type="reset" value="Annuler"/>
+
+
+							</form>
+
+							 <script src="formulaire.js"></script>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Immest All rights reserved.</li><li>Design: <a> Immest </a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
